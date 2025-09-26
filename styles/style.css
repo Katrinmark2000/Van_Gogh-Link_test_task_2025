@@ -1,0 +1,219 @@
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    font-family: var(--main-font-Open-Sans);
+  }
+
+
+
+/* Хедер */
+.header {
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--main-text-size);
+    text-transform: uppercase;
+}
+
+.menu__list a {
+    text-decoration: none;
+    transition: all 0.4s ease;
+}
+
+.menu__list a:hover{
+    color: var(--hover-color);
+}
+
+.menu__list {
+    display: flex;
+    gap: 80px;
+    justify-content: flex-end
+}
+
+.cards__title {
+    font-size: 36px;
+    text-transform: uppercase;
+    font-family: var(--font-Roboto);
+    line-height: 48.6px;
+    letter-spacing: 0;
+    padding-bottom: 32px;
+}
+
+
+
+/* Карточка */
+.cards__products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+  
+.card {
+    border: 1px solid #E0E6ED;
+    border-radius: 8px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.card-content-right {
+    display: flex;
+    flex-direction: column;
+    padding: 31px 30px 31px 30px;
+    flex: 1;
+}
+
+
+.card-img {
+    width: 100%;
+    height: auto;
+    width: fit-content;
+    border-radius: 8px;
+}
+
+.card-title {
+    font-size: 18px;
+    margin: 0 0 10px;
+    font-family: var(--font-Roboto);
+    font-weight: 400;
+    min-height: 66px;
+}
+
+.card-stock {
+    padding-bottom: 13px;
+}
+
+.card-footer {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card-stock__text {
+    font-size: var(--main-text-size);
+    margin: 25px 0 15px;
+    padding-left: 7px;
+    
+}
+
+.card-stock__icon {
+    width: 14px;
+    height: 14px;
+}
+
+
+
+/* Кнопка */
+.button {
+    padding: 10px 30px;
+    border: none;
+    background: var(--dark-color);
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    width: 159px;
+    transition: all 0.4s ease;
+}
+
+.button:hover {
+    background-color: var(--hover-color);
+}
+
+.button-wrapper {
+    display: flex;
+    justify-content: center;
+    padding-top: 21px;
+}
+
+.button-long {
+    padding: 12px 30px;
+    border: none;
+    background: var(--dark-color);
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    width: 223px;
+    transition: all 0.4s ease;
+}
+
+.button-long:hover {
+    background-color: var(--hover-color);
+}
+
+.button--active {
+    background-color: var(--disabled-color);
+}
+
+
+
+/* О компании */
+.about__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+  }
+  
+  .about__images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    gap: 30px;
+  }
+
+  .about__img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  .about__img--big {
+    grid-column: span 2;
+    max-height: 202px;
+  }
+  
+  .about__text {
+    margin-bottom: 16px;
+    line-height: 1.53;
+    font-weight: 700;
+  }
+  
+  .about__list {
+    font-size: 16px;
+    list-style: none;
+    margin: 0 0 20px;
+    padding-top: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .about__item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    line-height: 1.5;
+  }
+  
+  .about__icon {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+  }
+  
+  .about__btn {
+    margin-top: 30px;
+  }
+
+  .burger{
+    display: none;
+  }

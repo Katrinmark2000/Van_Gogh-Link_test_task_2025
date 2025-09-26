@@ -1,0 +1,217 @@
+/* При ширине 1440px и меньше */
+@media (width <= 1440px) {
+    .container {
+        padding-left: 140px;
+        padding-right: 140px;
+        max-width: 1440px;
+    }
+    .about-title {
+        padding-top: 79px;
+    }
+    .about__btn {
+        margin-top: 27px;
+    }
+    .about__images{
+        grid-template-rows: 162px 130px;
+        gap: 22px;
+    }
+}
+
+/* При ширине меньше 1300 */
+@media (width <= 1300px) {
+    .container {
+        padding-left: 196px;
+        padding-right: 196px;
+        max-width: 1160px;
+        margin-bottom: 45px;
+    }
+    .cards__title {
+        font-size: 30px;
+        padding-bottom: 26px;
+    }
+    .cards__products  {
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+    }
+    .card-content-right {
+        padding: 31px 203px 31px 30px;
+    }
+    .about-title {
+        padding-top: 50px;
+    }
+    .about__content {
+        display: flex;
+        flex-direction: column;
+    }
+    .about__images {
+        gap: 30px;
+        grid-template-rows: 1fr 179px;
+    }
+    .about__img--big {
+        max-height: 220px;
+    }
+    .burger {
+      display: flex;
+      width: 50px;
+      height: 50px;
+      background: url("../assets/icon-logo/burger-menu.svg") center/24px no-repeat;
+      background-size: 50px 50px;
+      cursor: pointer;
+      border: none;
+    }
+    
+    .burger.active {
+      background-image: url("../assets/icon-logo/burger-menu-close.svg");
+      background-size: 50px 50px;
+    }
+      
+    /* Меню */
+    .menu {
+      position: absolute;
+      top: 80px; /* под шапкой */
+      left: 196px;
+      right: 196px;
+      background: #fff;
+      border-radius: 12px;
+      z-index: 1000;
+    
+      /* скрыто */
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transform: translateY(-20px);
+      transition: all 0.3s ease;
+    }
+    
+    .menu.open {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+      transform: translateY(0);
+    }
+    
+    .menu__list {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      width: 100%;
+    }
+    
+    .menu__list a {
+      padding: 15px 0;
+      border-bottom: 1px solid #D5DFE9;
+      font-size: 18px;
+      text-decoration: none;
+      color: var(--dark-color);
+    }      
+    }
+
+    /* При ширине меньше 770зч */
+@media (width <= 770px) {
+    .container {
+      padding-left: 96px;
+      padding-right: 96px;
+      max-width: 768px;
+      margin-bottom: 37px;
+  }
+    .cards__title {
+      font-size: 20px;
+      padding-bottom: 17px;
+  }
+    .card-content-right{
+      padding: 29px 15px 16px 30px;
+    }
+    .card-title {
+      margin: 0 0 12px;
+    }
+    .button-wrapper {
+      padding-top: 27px;
+    }
+    .about-title{
+      padding-top: 36px;
+    }
+    .about__images{
+      gap: 26px;
+      grid-template-rows: 1fr;
+    }
+
+    .menu {
+      left: 96px;
+      right: 96px;
+    } 
+}
+
+    /* При ширине меньше 580px */
+    @media (width <= 580px) {
+      .container {
+        padding-left: 108px;
+        padding-right: 108px;
+        max-width: 576px;
+        margin-bottom: 37px;
+    }
+    .menu {
+      left: 108px;
+      right: 108px;
+    } 
+
+    .cards__products {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+  }
+  .card {
+    flex-direction: column;
+    min-height: 373px;
+  }
+  .card-img {
+    width: 100%;
+  }
+  .cards__title{
+    padding-bottom: 9px;
+  }
+  .card-title{
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .card-content-right{
+    padding: 10px;
+  }
+  .button {
+    width: 150px;
+    
+  }
+  .card-stock__text {
+    font-size: 14px;
+  }
+  .card-stock{
+    padding-bottom: 8px;
+  }
+  .button-wrapper {
+    padding-top: 17px;
+  }
+  .about__images{
+    gap: 13px;
+  }
+  .about__content{
+    gap: 17px;
+  }
+  .about__btn {
+    margin-top: 20px;
+    width: 160px;
+  }
+}
+
+ /* При ширине меньше 390px */
+ @media (width <= 390px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 390px;
+    margin-bottom: 37px;
+}
+.menu {
+  left: 15px;
+  right: 15px;
+} 
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/fonts/font.css"/>
+    <link rel="stylesheet" href="./styles/global.css"/>
+    <link rel="stylesheet" href="./styles/style.css"/>
+    <link rel="stylesheet" href="./styles/media-style.css"/>
+    <script type="module" src="./js/main.js" defer></script>
+</head>
+<body>
+    <header class="container header">
+        <div class="logo">
+            <img src="./assets/icon-logo/logo-header.svg" class="logo__header">
+            </div>
+
+            <button class="burger" aria-label="Открыть меню"></button>
+
+            <nav class="menu">
+              <ul class="menu__list">
+                <a href='#general' class='menu__link'>Главная</a>
+                <a href='#catalog' class='menu__link'>Каталог</a>
+                <a href='#about' class='menu__link'>О компании</a>
+                <a href='#payment' class='menu__link'>Оплата и доставка</a>
+                <a href='#contacts' class='menu__link'>Контакты</a>
+              </ul>
+            </nav>
+    </header>
+   <main class="container">
+  <section class="cards">
+  <h2 class="cards__title">Рекомендуемое оборудование</h2>
+  <div id="product-list" class="cards__products"></div>
+
+  <!-- Шаблон карточки -->
+  <template id="cards__product-template">
+    <div class="card">
+      <img class="card-img"/>
+      <div class="card-content-right">
+      <h3 class="card-title"></h3>
+      <div class="card-footer">
+      <div class="card-stock">
+        <span>
+            <img class="card-stock__icon"/>
+        </span>
+        <span class="card-stock__text"></span>
+      </div>
+    </div>
+      <button class="button">Подробнее</button>
+    </div>
+    </div>
+  </template>
+
+  <div class="button-wrapper">
+  <button class="button-long">Перейти в каталог</button>
+  </div>
+  </section>
+  <section class="about" id="about">
+  <h2 class="cards__title about-title">О компании</h2>
+  <div class="about__content">
+    <div class="about__images">
+      <img src="./assets/image3.jpg" alt="Лифтовое оборудование" class="about__img about__img--big">
+      <img src="./assets/image2.jpg" alt="Лифты" class="about__img">
+      <img src="./assets/image1.jpg" alt="Склад лифтового оборудования" class="about__img">
+    </div>
+
+    <div class="about__info">
+      <p class="about__text">
+        Компания <strong>«SPARTSPRO»</strong> специализируется на поставках лифтового оборудования,
+        комплектующих и запчастей для лифтов и эскалаторов ведущих мировых и российских производителей.
+      </p>
+
+      <ul class="about__list">
+        <li class="about__item">
+          <img src="./assets/icon-logo/not-in-stock.svg" alt="" class="about__icon">
+          Гарантия качества – работаем только с проверенными производителями.
+        </li>
+        <li class="about__item">
+          <img src="./assets/icon-logo/not-in-stock.svg" alt="" class="about__icon">
+          Собственный склад – более 30 000 наименований в наличии для оперативных отгрузок.
+        </li>
+        <li class="about__item">
+          <img src="./assets/icon-logo/not-in-stock.svg" alt="" class="about__icon">
+          Соблюдение сроков – приоритет компании: быстрая обработка заказов и доставка без задержек.
+        </li>
+      </ul>
+
+      <p class="about__item">
+        Мы обеспечиваем бесперебойные поставки для ваших проектов. Оставьте заявку – и получите
+        коммерческое предложение в кратчайшие сроки!
+      </p>
+
+      <button class="button about__btn">Подробнее</button>
+    </div>
+  </div>
+  </section>
+</main>
+</body>
+</html>
