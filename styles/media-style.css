@@ -209,6 +209,10 @@
     max-width: 390px;
     margin-bottom: 37px;
 }
+.menu {
+  left: 15px;
+  right: 15px;
+}
 }
 
  /* При ширине меньше 390px */
