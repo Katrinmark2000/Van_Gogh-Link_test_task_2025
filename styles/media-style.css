@@ -22,7 +22,7 @@
     .container {
         padding-left: 196px;
         padding-right: 196px;
-        max-width: 1160px;
+        max-width: auto;
         margin-bottom: 45px;
     }
     .cards__title {
@@ -35,7 +35,7 @@
         gap: 28px;
     }
     .card-content-right {
-        padding: 31px 203px 31px 30px;
+      padding: 31px clamp(15px, 8vw, 60px) 31px 30px;
     }
     .about-title {
         padding-top: 50px;
@@ -147,7 +147,7 @@
       .container {
         padding-left: 108px;
         padding-right: 108px;
-        max-width: 576px;
+        max-width: 100%;
         margin-bottom: 37px;
     }
     .menu {
@@ -202,6 +202,15 @@
   }
 }
 
+@media (width <= 560px) {
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 390px;
+    margin-bottom: 37px;
+}
+}
+
  /* При ширине меньше 390px */
  @media (width <= 390px) {
   .container {
@@ -214,4 +223,18 @@
   left: 15px;
   right: 15px;
 } 
+
+.cards__products {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5px;
+}
+.cards__title {
+  font-size: 16px;
+  line-height: 1;
+}
+.burger {
+  width: 10px;
+  height: 20px;
+}
 }
