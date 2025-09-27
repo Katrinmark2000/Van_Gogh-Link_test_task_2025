@@ -30,5 +30,5 @@
 
 
 ## Просмотр проекта
-Сайт доступен через GitHub Pages по ссылке:  
+Доступно к просмотру через GitHub Pages по ссылке:  
 [https://katrinmark2000.github.io/Van_Gogh-Link_test_task_2025/](https://katrinmark2000.github.io/Van_Gogh-Link_test_task_2025/)
