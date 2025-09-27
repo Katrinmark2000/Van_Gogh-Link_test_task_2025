@@ -40,17 +40,15 @@ const products = [
   
     //если экран меньше или равен 580px → показываем только 4 карточки
     const items = window.innerWidth <= 580 ? products.slice(0, 4) : products;
-  
+    
     items.forEach(product => list.appendChild(ProductCard(product)));
   }
 
   renderProducts();
-  buttonOnClick();
 
   //слушаем ресайз, чтобы карточки обновлялись при изменении ширины окна
 window.addEventListener("resize", () => {
   renderProducts();
-  buttonOnClick();
 });
 
 const burger = document.querySelector('.burger');
