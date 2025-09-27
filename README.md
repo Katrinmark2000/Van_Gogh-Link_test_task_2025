@@ -27,3 +27,8 @@
    - Моканные данные задаются в JS как массив объектов.  
    - Шаблон карточки хранится в `<template>` в HTML.  
    - JS клонирует шаблон для каждого объекта и вставляет в DOM.  
+
+
+## Просмотр проекта
+Сайт доступен через GitHub Pages по ссылке:  
+[https://katrinmark2000.github.io/Van_Gogh-Link_test_task_2025/](https://katrinmark2000.github.io/Van_Gogh-Link_test_task_2025/)
