@@ -53,16 +53,6 @@ window.addEventListener("resize", () => {
   buttonOnClick();
 });
 
-  //не поняла по макету как должна блокироваться кнопка, сделала так пока что
-  export function buttonOnClick() {
-    const buttons = document.querySelectorAll('.button');
-    buttons.forEach(button => {
-        button.addEventListener("click", () => {
-            button.classList.toggle('button--active');
-        });
-    });
-}
-
 const burger = document.querySelector('.burger');
 const menu = document.querySelector('.menu');
 
