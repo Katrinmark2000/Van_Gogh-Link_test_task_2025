@@ -128,6 +128,13 @@
     background-color: var(--hover-color);
 }
 
+.button:focus,
+.button:active {
+  outline: none;
+  box-shadow: none;
+  background-color: var( --disabled-color); /* оставляем твой цвет */
+}
+
 .button-wrapper {
     display: flex;
     justify-content: center;
@@ -148,10 +155,6 @@
 
 .button-long:hover {
     background-color: var(--hover-color);
-}
-
-.button--active {
-    background-color: var(--disabled-color);
 }
 
 
